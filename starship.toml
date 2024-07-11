@@ -1,0 +1,37 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Left
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$git_metrics\
+$python\
+$lua\
+$go\
+$line_break\
+$character"""
+
+# Right
+right_format = """$sudo $cmd_duration $jobs $time"""
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+[directory]
+style = "blue"
+
+[character] 
+success_symbol = '[󰁕](bold purple)' 
+error_symbol = '[✖](bold red)'
+
+[package]
+disabled = true
+
+[time]
+disabled = false
+style = "bold white"
+format = "[$time]($style)"

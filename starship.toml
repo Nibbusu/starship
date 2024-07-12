@@ -17,7 +17,7 @@ $line_break\
 $character"""
 
 # Right
-right_format = """$sudo $cmd_duration $jobs ${custom.moreyouknow} $time"""
+right_format = """$sudo $cmd_duration $jobs $time"""
 
 # Inserts a blank line between shell prompts
 add_newline = true

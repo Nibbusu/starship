@@ -5,6 +5,7 @@ format = """
 $username\
 $hostname\
 $directory\
+${custom.nb}\
 $git_branch\
 $git_state\
 $git_status\
@@ -35,3 +36,10 @@ disabled = true
 disabled = false
 style = "bold white"
 format = "[$time]($style)"
+
+[custom.nb]
+detect_folders = ['.nb']
+command = "cat ~/.nb/.current"
+style = "bold white"
+symbol = ""
+format = "[$symbol $output]($style)"

@@ -23,10 +23,10 @@ right_format = """$sudo $cmd_duration $jobs $time"""
 add_newline = true
 
 [directory]
-style = "blue"
+style = "yellow"
 home_symbol = "~"
 [character] 
-success_symbol = '[󰁕](bold purple)' 
+success_symbol = '[󰁕](bold green)' 
 error_symbol = '[✖](bold red)'
 
 [package]
